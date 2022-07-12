@@ -22,3 +22,5 @@ With the HTML DOM, JavaScript can access and change all the elements of an HTML 
 <li>JavaScript can react to all existing HTML events in the page</li><br>
 <li>JavaScript can create new HTML events in the page</li>
 </ol>
+
+<a href="https://www.w3schools.com/js/js_htmldom_methods.asp">The Method And Other Study Material Related to DOM</a>
