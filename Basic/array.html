@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Access Element By Id<br>
+    <p id="main"></p><br>
+    Access Element by the class<br>
+    <p class="jodi">
+        
+    </p><br>
+    Access Element by the class<br>
+    <p>Het There I uses <p class="jodi">hhhh </p> this cars.</p>
+
+    <script>
+        let cars = ["BMW","Maruti","Ford","Scoda"];
+
+        document.getElementById("main").innerHTML=cars;//we use this method to change the inner html text or value to website//Returns the element that has the ID attribute with the specified value
+        document.getElementsByClassName("jodi").innerHTML=cars;//Returns an HTMLCollection containing all elements with the specified class name//it will display nothing becoz its Read-only 
+
+        //forexample
+        const a = document.getElementsByClassName("jodi").length;
+         document.write(a);
+
+    </script>
+</body>
+</html>
