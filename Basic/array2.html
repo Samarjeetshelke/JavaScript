@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="1">
+    </p>
+    <p id="2">
+    </p>
+    <p id="3">
+    </p>
+    <p id="4">
+    </p>
+    <p id="5">
+    </p>
+    <p id="6"> 
+    </p>
+    <script>
+        let cars = ["bmw" , "scoda" ,"nano" ,"volvo"];
+        var data = "The list of array is "+cars;
+        document.getElementById("1").innerHTML=data;
+
+        var data = "The last element in the arrray is "+cars[cars.length-1];
+        document.getElementById("2").innerHTML=data;
+
+        //array Methods
+        document.getElementById("3").innerHTML = "This is To String Method: "+cars.toString();//convert to the string
+        document.getElementById("4").innerHTML=cars.pop();//it will pop last element means it will return and dlete the last element from the array
+        document.getElementById("5").innerHTML=cars;//elements after pop()
+
+        cars.push("Samarjeet");//it will push the new elements in the array[at the end]
+        document.getElementById("6").innerHTM=cars;
+        //shift() used to remove firstmethod unshift() method used to add element to the first
+        //eg cars.shift()
+        //cars.unshift("hundi");
+    </script>
+</body>
+</html>
