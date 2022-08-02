@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .myclass{
+            color: red;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 id="sam">Hello, I am Samarjeet......</h1>
+<img id="samx"src="boff.gif">
+<button onclick="change()">On/Off</button>
+
+<script>
+    function change(){
+        var ele = document.getElementById("samx");
+        if(ele.src.match("boff.gif")){
+            ele.src="bon.gif";
+        }
+        else{
+            ele.src="boff.gif";
+        }
+    }
+
+</script>
+    
+    
+</body>
+</html>
