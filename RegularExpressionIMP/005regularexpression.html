@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REgularExpression</title>
+</head>
+<body>
+    
+<script>
+    var str = "Hello World";
+    //search function
+    /* var patteran=/l/i;//usng insensitive 
+    var x=str.search(patteran);
+    if(x== - 1){
+        alert(patteran+"not Found!");
+    }
+    else{
+        alert(patteran+" Found at: "+x);
+    }
+
+    var patteran=/l/;//usng sensitive 
+    var x=str.search(patteran);
+    if(x== - 1){
+        alert(patteran+" not Found!");
+    }
+    else{
+        alert(patteran+" Found at: "+x);
+    }
+
+    var patteran=/l/g;//usng global + sensetive 
+    var x=str.search(patteran);
+    if(x== - 1){
+        alert(patteran+" not Found!");
+    }
+    else{
+        alert(patteran+" Found at: "+x);
+    }
+
+    */
+   /*
+    var patteran=/(l|H)/g;//usng global + sensetive (or)
+    var x=str.search(patteran);
+    if(x== - 1){
+        alert(patteran+" not Found!");
+    }
+    else{
+        alert(patteran+" Found at: "+x);
+    }
+
+    var patteran=/(l+a)/g;//usng global + sensetive (or)(try (l+l) it found at 2)
+    var x=str.search(patteran);
+    if(x== - 1){
+        alert(patteran+" not Found!");
+    }
+    else{
+        alert(patteran+" Found at: "+x);
+    }
+*/
+    //match function
+    //it match the string and return it not a position the charater //it not found the it return s a null
+   /* var pat=/o/;
+    var x =str.match(pat);
+
+    if(x== null){
+        alert(pat+" not Found!");
+    }
+    else{
+        alert(pat+" Found : "+x);
+    }
+
+    var pat=/HellO/i;
+    var x =str.match(pat);
+    if(x== null){
+        alert(pat+" not Found!");
+    }
+    else{
+        alert(pat+" Found : "+x);
+    }
+
+    var pat=/l/g;
+    var x =str.match(pat);
+    if(x== null){
+        alert(pat+" not Found!");
+    }
+    else{
+        alert(pat+" Found : "+x);
+    }*/
+    /*
+    var pat=/(l+l)/g;
+    var x =str.match(pat);
+    if(x== null){
+        alert(pat+" not Found!");
+    }
+    else{
+        alert(pat+" Found : "+x);
+    }
+    var pat=/(l+o)|(l+l)|H/g;
+    var x =str.match(pat);
+    if(x== null){
+        alert(pat+" not Found!");
+    }
+    else{
+        alert(pat+" Found : "+x);
+    }*/
+
+
+    //test function
+    //it will jsut take a string in which we want to search and invoke by using pattern  and return true or false
+    /*var pat=/a/;
+    alert("The search result for: "+pat+" : "+pat.test(str));
+
+    var pat=/HeLlO/i;
+    alert("The search result for: "+pat+" : "+pat.test(str));
+*/
+
+//check if ther is a digit(\d)or notdigit(\D)
+/*
+var strx="hello word 1 this is user123458";
+var pat=/\d/g;
+var ansstr;
+ansstr+= " The string contains digits are(using match+global):\n"+ strx.match(pat)+"\n";
+ansstr+= " The string contains digits are(using search+global):\n"+ strx.search(pat)+"\n";
+ansstr+= " The string contains digits are(using test+global):\n"+ pat.test(strx)+"\n";
+alert("The results:\n"+ansstr);
+*/
+
+//check if ther is a  notdigit(\D)
+var strx="hello word 1 this! is user123458";
+var pat=/\D/g;
+var ansstr;
+ansstr+= " The string contains nondigits are(using match+global):\n"+ strx.match(pat)+"\n";
+ansstr+= " The string contains nonigits are(using search+global):\n"+ strx.search(pat)+"\n";
+ansstr+= " The string contains nondigits are(using test+global):\n"+ pat.test(strx)+"\n";
+alert("The results:\n"+ansstr);
+
+/*
+\s = single white space
+\S = non white space
+\w = charater letter
+\W = except charter letter
+.  = line terminator
+[abc] =match any cahracter within the bracket  it can also written as[a-c]
+[^abc] = match anything except abc[^a-c]
+*/
+pat=/[^0-9]/g;
+ansstr= " The string contains nondigits are(using test+global):\n"+ strx.match(pat)+"\n";
+alert("The results:\n"+ansstr);
+
+pat=/[0-9]/g;
+ansstr= " The string contains nondigits are(using test+global):\n"+ strx.match(pat)+"\n";
+alert("The results:\n"+ansstr);
+
+pat=/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g;
+ansstr= " The string contains nondigits are(using test+global):\n"+ strx.match(pat)+"\n";
+alert("The results:\n"+ansstr);
+</script>
+</body>
+</html>

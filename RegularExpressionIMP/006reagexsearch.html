@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <h3>JavaScript String Methods!</h3>
+        <p id="para">Searching a string for "W3School" in this same paragraph,and display the position of the matchxx:</p>
+        <input type="text" id="searchval">
+        <input type="submit" value="Check" onclick="searchx()">
+        <p id="ans">
+
+        </p>
+    </pre>
+    <script>
+        function searchx(){
+        
+        const para=document.getElementById("para");
+        let str=para.innerHTML;
+        var ans=document.getElementById("ans");
+        var val=document.getElementById("searchval").value;
+            //the search method is going to return the indexx
+            //it will search for exact ans (it is case sensetive)if it return -1 means not found!
+        ans.innerHTML="searching";
+        //var exp=
+        const re = new RegExp(val, "i");//regex obj
+        var n=str.search(re);
+        
+        console.log(n);
+
+        if(n !== -1){
+            ans.innerHTML=val+"the position of string is(with case sensetive) : "+n;
+
+        }
+        else{
+            ans.innerHTML="Not Found!";
+        }
+    
+        }
+    </script>
+</body>
+</html>
