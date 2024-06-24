@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
 </head>
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button>
+            <input type="text" placeholder="Enter City Name" spellcheck="false"  id="queryx">
+            <button onclick="searchweather()">
                 <img src="images/search.png" alt="">
             </button>
 
@@ -35,9 +36,13 @@
                         <p class="wind">50 Km/h</p>
                         <p>Wind Speed</p>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
+    <script>
+
+        checkWeather();
+    </script>
 </body>
 </html>
